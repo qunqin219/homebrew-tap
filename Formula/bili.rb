@@ -7,18 +7,18 @@ class Bili < Formula
   on_macos do
     on_arm do
       url "https://github.com/qunqin219/bcli/releases/download/v0.2.2/bili-macos-arm64"
-      sha256 "6bf3fde5195900a553e52ee827402dd1381bf24b7e9984383a198ac355d7d85c"
+      sha256 "2f7864de33c989e8378e08bc27b7cacaf7e154549945ddd58f85518e6d598d79"
     end
 
     on_intel do
       url "https://github.com/qunqin219/bcli/releases/download/v0.2.2/bilicli-0.2.2.tar.gz"
-      sha256 "c944750a3d7e8e6e75c6f863f6774bac894f6e6dafdc8306bf6c9d93bff157fa"
+      sha256 "bc94e7f3288cf352476b9a292901c59958c4ebebeefa693009be21d7d91faa2a"
     end
   end
 
   on_linux do
     url "https://github.com/qunqin219/bcli/releases/download/v0.2.2/bili-linux-x64"
-    sha256 "6d681c5ca544c8553668d715394deb40aee3e7b02ad9213e3052cfe8ed995c51"
+    sha256 "c9dc37672276ce019c6d59c7e28aa04019356cc4026d98ed36f84b5ae9c41e93"
   end
 
   def install
