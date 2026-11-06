@@ -1,30 +1,30 @@
 class Bili < Formula
   desc "Zero-dependency Bilibili CLI with JSON envelope, QR login and ASR"
   homepage "https://github.com/qunqin219/bcli"
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/qunqin219/bcli/releases/download/v0.8.0/bili-macos-arm64"
-      sha256 "2d795c32c5fc1baebac20bceef2f2bb7d36086e7588d7866db1d09622c39232a"
+      url "https://github.com/qunqin219/bcli/releases/download/v0.8.1/bili-macos-arm64"
+      sha256 "e3af6690f29ba5a37f0d0c9ba792903b7323b5e8bed8ee59173ead0c8f457df9"
     end
 
     on_intel do
-      url "https://github.com/qunqin219/bcli/releases/download/v0.8.0/bilicli-0.8.0.tar.gz"
-      sha256 "dedf30a7d43b4d4cf7f4261938b2e2d28af2481ca4130488cfc13896a750b89e"
+      url "https://github.com/qunqin219/bcli/releases/download/v0.8.1/bilicli-0.8.1.tar.gz"
+      sha256 "c565dbcf75f0b6bb4372c040c7a8eb849b7939140ae45f9132c78f8942ba8038"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/qunqin219/bcli/releases/download/v0.8.0/bili-linux-arm64"
-      sha256 "b9875c9580cc4fed34a51811c6aced082ce03cf05414a9c47936d8f378eebae6"
+      url "https://github.com/qunqin219/bcli/releases/download/v0.8.1/bili-linux-arm64"
+      sha256 "d149890484970d38d8f55f5565afb4ccbee3eff60abbd6ff0b6274f239f72821"
     end
 
     on_intel do
-      url "https://github.com/qunqin219/bcli/releases/download/v0.8.0/bili-linux-x64"
-      sha256 "341e01fe95826aebb3131db11ac3414870e7ac8a6648cbec93b5807dd17614dc"
+      url "https://github.com/qunqin219/bcli/releases/download/v0.8.1/bili-linux-x64"
+      sha256 "ce6af91f6c6a4513efee54eb62d6d46e6594b217836f60cea98c8e23d5ac32f7"
     end
   end
 
@@ -42,6 +42,6 @@ class Bili < Formula
   end
 
   test do
-    assert_match "bili 0.8.0", shell_output("#{bin}/bili --version")
+    assert_match "bili 0.8.1", shell_output("#{bin}/bili --version")
   end
 end
